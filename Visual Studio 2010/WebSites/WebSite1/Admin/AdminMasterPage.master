@@ -1,0 +1,76 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="../StyleSheet.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+ <div id="wrapper">
+	<div id="menu">
+		<ul>
+			<li><a href="AdminHome.aspx">Homepage</a></li>
+			<li><a href="admin_chg_pwd.aspx">change Password</a></li>
+			<li><a href="../Logout.aspx">Logout</a></li>
+			
+		</ul>
+	</div>
+	<div id="logo">
+		<h1><a href="#">Payroll System</a></h1>
+		
+	</div>
+	<hr />
+	<div id="page">
+    <div id="content">
+     <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+         <a href="AdminMasterPage.master">AdminMasterPage.master</a>
+        </asp:ContentPlaceHolder>
+    </div>
+		
+		<!-- end #content -->
+		<div id="sidebar">
+			<ul>
+				
+				<li>
+				</li>
+				<li>
+					<h2>Admin Activity</h2>
+					<ul>
+						<li><a href="Admin_dept_mst.aspx">Department</a></li>
+							<li><a href="Admin_des_mst.aspx">Designation</a></li>
+							<li><a href="Admin_allowance_mst.aspx">Allowances</a></li>
+							<li><a href="Admin_ded_mst.aspx">Deductions</a></li>
+							<li><a href="Admin_perk_mst.aspx">Perks</a></li>
+							<li><a href="Admin_tax_mst.aspx">Tax</a></li>
+                            <%--<li><a href="Admin_Bank_mst.aspx">Bank</a></li>--%>	
+    						<li><a href="Admin_Holiday_mst.aspx">Holiday</a></li>
+							<li><a href="Admin_Emp_mst.aspx">Employee</a></li>
+							<li><a href="Admin_Loan_Approval.aspx">Loan Approval</a></li>
+							<li><a href="Admin_Loan_allList.aspx">All Loan Details</a></li>
+							<li><a href="Admin_Leave_Approval.aspx">Leave Approval</a></li>
+							<li><a href="Admin_wage_assign.aspx">Wages Assignment</a></li>
+							<li><a href="salsheet.aspx">Salary Slip</a></li>
+							<li><a href="Admin_Emp_LeaveEncash.aspx">Leave Encashment</a></li>
+							<li><a href="Admin_Emp_AnumSalRep.aspx">Annual Salary Report</a></li>
+							<li><a href="Admin_Emp_Attendance.aspx">Attendance Report</a></li>
+							<li><a href="Admin_Emp_JobLeave.aspx">Employee Job Leave</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<!-- end #sidebar -->
+	</div>
+	<!-- end #page -->
+	<div id="footer">
+		<p>(c) 2007 Website Name. Designed by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>.</p>
+	</div>
+</div>
+
+       
+ 
+</body>
+</html>

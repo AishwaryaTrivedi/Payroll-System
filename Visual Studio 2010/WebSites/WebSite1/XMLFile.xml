@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+  <Ad>
+    <NavigateUrl></NavigateUrl>
+    <ImageUrl>h1.jpeg</ImageUrl>
+  </Ad>
+  <Ad>
+    <NavigateUrl></NavigateUrl>
+    <ImageUrl>h2.jpeg</ImageUrl>
+  </Ad>
+  <Ad>
+    <NavigateUrl></NavigateUrl>
+    <ImageUrl>h3.jpeg</ImageUrl>
+  </Ad>
+</Advertisements>

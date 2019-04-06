@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="../StyleSheet.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+ <div id="wrapper">
+	<div id="menu">
+		<ul>
+			<li><a href="#">Homepage</a></li>
+			 <li><a href="../Logout.aspx">Logout</a></li>
+
+		</ul>
+	</div>
+	<div id="logo">
+		<h1><a href="#">Payroll System</a></h1>
+		<h2></h2>
+	</div>
+	<hr />
+	<div id="page">
+    <div id="content">
+     <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+		
+		<!-- end #content -->
+		<div id="sidebar">
+			<ul>
+				<li id="search">
+					
+				</li>
+				
+				<li>
+					<h2>Employee Activity</h2>
+					<ul>
+						<li><a href="User_Profile_View.aspx">My Profile</a></li>
+							<li><a href="emp_Sal_sheet.aspx">Salary History</a></li>
+							<li><a href="User_leave_request.aspx">Leave Request </a></li>
+							<li><a href="User_loan_request.aspx">Loan Request </a></li>
+                            <li><a href="User_Loan_View.aspx">Loan Detail </a></li> 
+                            <li><a href="../Attendance.aspx">Attendence </a></li> 
+
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<!-- end #sidebar -->
+	</div>
+	<!-- end #page -->
+	<div id="footer">
+		<p>(c) 2012 Website Name aavidthermolly.org</p>
+	</div>
+</div>
+
+       
+ 
+</body>
+</html>
